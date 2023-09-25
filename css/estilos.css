@@ -1,0 +1,126 @@
+:root {
+    --font-principal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --color-primária: #fff;
+    --background-primária: #282A36;
+    --background-secundária: #191A21;
+    --background-terciária: #343746;
+    --background-quaternária: #000;
+}
+
+body {
+    font-family: var(--font-principal);
+    background: var(--background-primária);
+    color: var(--color-primária);
+}
+
+.main {
+    background: var(--background-secundária);
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 20px 30px;
+    box-shadow: 10px 10px 15px -7px var(--background-secundária);
+}
+
+.header {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container-box label {
+    margin-bottom: 5px;
+}
+
+.container-box-icone {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-box i {
+    background: var(--background-terciária);
+    padding: 12px 16px;
+    width: 50px;
+    text-align: center;
+    margin-top: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+}
+
+.container-box input {
+    background: none;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid var(--background-terciária);
+    font-size: 1rem;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container-box input:focus {
+    outline: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.resultado span {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.footer .btn {
+    background: var(--background-quaternária);
+    color: inherit;
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.footer .btn:hover {
+    opacity: 1;
+}

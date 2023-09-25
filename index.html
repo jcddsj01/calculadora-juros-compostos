@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./css/responsivo.css">
+    <title>Projeto - Calculadora de Juros Compostos</title>
+</head>
+<body>
+    <main class="main">
+        <div class="header">
+            <h1>Calculadora de Juros Compostos</h1>
+        </div>
+        <div class="container">
+            <div class="container-box">
+                <label for="capital">Valor Inicial (capital):</label>
+                <div class="container-box-icone">
+                    <i class="fa-solid fa-brazilian-real-sign"></i>
+                    <input type="number" name="capital" id="capital">
+                </div>
+            </div>
+            <div class="container-box">
+                <label for="taxa-juros">Taxa de Juros a.m:</label>
+                <div class="container-box-icone">
+                    <i class="fa-solid fa-percent"></i>
+                    <input type="number" name="taxa-juros" id="taxa-juros">
+                </div>
+            </div>
+            <div class="container-box">
+                <label for="tempo-rendimento">Tempo de Rendimento a.m:</label>
+                <div class="container-box-icone">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="number" name="tempo-rendimento" id="tempo-rendimento">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="resultado">
+                <p>Valor total final:</p>
+                <span id="valor-total">0,00</span>
+                <p>Valor investido:</p>
+                <span id="valor-investido">0,00</span>
+                <p>Total em juros:</p>
+                <span id="total-juros">0,00</span>
+            </div>
+            <button type="button" class="btn" id="calcular-juros-compostos"><i class="fa-solid fa-check fa-xl"></i></button>
+            <button type="button" class="btn" id="limpar"><i class="fa-solid fa-trash fa-lg"></i></button>
+        </div>
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b5bb1aed38.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
